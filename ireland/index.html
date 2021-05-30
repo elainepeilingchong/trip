@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>24 Travel</title>
   <meta charset="utf-8">
@@ -9,186 +10,239 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
- 
- <style>
-  body {
-    font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
-  }
-  h3, h4 {
-    margin: 10px 0 30px 0;
-    letter-spacing: 10px;      
-    font-size: 20px;
-    color: #111;
-  }
-  .container {
-    padding: 80px 120px;
-  }
-  .person {
-    border: 10px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
-  }
-  .person:hover {
-    border-color: #f1f1f1;
-  }
-  .carousel-inner img {
-    /* -webkit-filter: grayscale(90%); */
-    /* filter: grayscale(90%); make all photos black and white  */
-    width: 100%; /* Set width to 100% */
-    /* height: 300px; */
-    object-fit: cover;
-    margin: auto;
-  }
-  .carousel-caption h3 {
-    color: #fff !important;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
-  .bg-1 {
-    background: #2d2d30;
-    color: #bdbdbd;
-  }
-  .bg-1 h3 {color: #fff;}
-  .bg-1 p {font-style: italic;}
-  .list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-  .list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail p {
-    margin-top: 15px;
-    color: #555;
-  }
-  .btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #f1f1f1;
-    border-radius: 0;
-    transition: .2s;
-  }
-  .btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
-  }
-  .modal-header, h4, .close {
-    background-color: #333;
-    color: #fff !important;
-    text-align: center;
-    font-size: 30px;
-  }
-  .modal-header, .modal-body {
-    padding: 40px 50px;
-  }
-  .nav-tabs li a {
-    color: #777;
-  }
- 
-  .navbar {
-    font-family: Montserrat, sans-serif;
-    margin-bottom: 0;
-    background-color: #2d2d30;
-    border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    opacity: 0.9;
-  }
 
-  .navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
-  }
-  .navbar-nav li a:hover {
-    color: #fff !important;
-  }
-  .navbar-nav li.active a {
-    color: #fff !important;
-    background-color: #29292c !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-  }
-  .navbar-brand{
-    padding: 0px;
-    padding-left: 5px ;
-  }
-  .open .dropdown-toggle {
-    color: #fff;
-    background-color: #555 !important;
-  }
-  .dropdown-menu li a {
-    color: #000 !important;
-  }
-  .dropdown-menu li a:hover {
-    background-color: red !important;
-  }
-  footer {
-    background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
-  }
-  footer a {
-    color: #f5f5f5;
-  }
-  footer a:hover {
-    color: #777;
-    text-decoration: none;
-  }  
-  .form-control {
-    border-radius: 0;
-  }
-  textarea {
-    resize: none;
-  }
+  <style>
+    body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+    }
+
+    h3,
+    h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 20px;
+      color: #111;
+    }
+
+    .container {
+      padding: 80px 120px;
+    }
+
+    .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+    }
+
+    .person:hover {
+      border-color: #f1f1f1;
+    }
+
+    .carousel-inner img {
+      /* -webkit-filter: grayscale(90%); */
+      /* filter: grayscale(90%); make all photos black and white  */
+      width: 100%;
+      /* Set width to 100% */
+      /* height: 300px; */
+      object-fit: cover;
+      margin: auto;
+    }
+
+    .carousel-caption h3 {
+      color: #fff !important;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none;
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+      }
+    }
+
+    .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+    }
+
+    .bg-1 h3 {
+      color: #fff;
+    }
+
+    .bg-1 p {
+      font-style: italic;
+    }
+
+    .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+    }
+
+    .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+    }
+
+    .modal-header,
+    h4,
+    .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .modal-header,
+    .modal-body {
+      padding: 40px 50px;
+    }
+
+    .nav-tabs li a {
+      color: #777;
+    }
+
+    .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+    }
+
+    .navbar-nav li a:hover {
+      color: #fff !important;
+    }
+
+    .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+    }
+
+    .navbar-brand {
+      padding: 0px;
+      padding-left: 5px;
+    }
+
+    .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+    }
+
+    .dropdown-menu li a {
+      color: #000 !important;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: red !important;
+    }
+
+    footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+    }
+
+    footer a {
+      color: #f5f5f5;
+    }
+
+    footer a:hover {
+      color: #777;
+      text-decoration: none;
+    }
+
+    .form-control {
+      border-radius: 0;
+    }
+
+    textarea {
+      resize: none;
+    }
   </style>
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage"><img src="https://elainepeilingchong.github.io/trip/ireland/imgs/logo/rectangle.png" width="150" height="50" style="object-fit: cover; color: white">
-      <!-- 24  Travel -->
-      </a>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage"><img
+            src="https://elainepeilingchong.github.io/trip/ireland/imgs/logo/rectangle.png" width="150" height="50"
+            style="object-fit: cover; color: white">
+          <!-- 24  Travel -->
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="accommodation.html">Accommodation</a></li>
+          <li><a href="activities.html">Activity</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Itinerary
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="v1.html">V1(Latest)</a></li>
+              <li><a href="v2.html">V2</a></li>
+              <li><a href="v3.html">V3</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Others
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="advices.html">To bring</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="accommodation.html">Accommodation</a></li>
-        <li><a href="activities.html">Activity</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Itinerary
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="v1.html">V1</a></li>
-            <li><a href="v2.html">V2</a></li>
-            <li><a href="v3.html">V3</a></li> 
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -199,27 +253,28 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="https://elainepeilingchong.github.io/trip/ireland/imgs/carousel/img1.jpeg" alt="Galway" width="1200" height="300" >
+        <img src="https://elainepeilingchong.github.io/trip/ireland/imgs/carousel/img1.jpeg" alt="Galway" width="1200"
+          height="300">
         <div class="carousel-caption">
           <h3>Galway</h3>
           <p>Cliff of Moher</p>
-        </div>      
+        </div>
       </div>
 
       <div class="item">
-        <img src="https://elainepeilingchong.github.io/trip/ireland/imgs/carousel/img2.jpeg" alt="Donegal" width="1200" >
+        <img src="https://elainepeilingchong.github.io/trip/ireland/imgs/carousel/img2.jpeg" alt="Donegal" width="1200">
         <div class="carousel-caption">
           <h3>Donegal</h3>
           <p>Slieve League</p>
-        </div>      
+        </div>
       </div>
-    
+
       <div class="item">
-        <img src="https://elainepeilingchong.github.io/trip/ireland/imgs/carousel/img3.jpeg" alt="Sligo" width="1200" >
+        <img src="https://elainepeilingchong.github.io/trip/ireland/imgs/carousel/img3.jpeg" alt="Sligo" width="1200">
         <div class="carousel-caption">
           <h3>Sligo</h3>
           <p>benbulben</p>
-        </div>      
+        </div>
       </div>
     </div>
 
@@ -232,266 +287,267 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-</div>
-
-<!-- Container (The Band Section) -->
-<div id="band" class="container text-center">
-  <h3>THE GANG</h3>
-  <p><em>We love travel!</em></p>
-  <!-- <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
-  <br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Elaine</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo" class="collapse">
-        <!-- <p>Guitarist and Lead Vocalist</p> -->
-        <p>Loves Hiking</p>
-        <!-- <p>Member since 1988</p> -->
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Recon</strong></p><br>
-      <a href="#demo2" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo2" class="collapse">
-        <!-- <p>Drummer</p> -->
-        <p>Loves drummin'</p>
-        <!-- <p>Member since 1988</p> -->
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Zac</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Sylvia</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Kellie</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Jin</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Yong Kwan</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Ardy</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Wai Jian</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Tai</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Pat</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Bryan</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Cara</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>CR</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Joey</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <p class="text-center"><strong>Zhi Chien</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
-      </a>
-      <div id="demo3" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
   </div>
-</div>
-<div id="contact" class="container">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>We love to help!</em></p>
 
-  <div class="row">
-    <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Dundalk, IE</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +353 834613320</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: elainepeilingchong@gmail.com</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+  <!-- Container (The Band Section) -->
+  <div id="band" class="container text-center">
+    <h3>THE GANG</h3>
+    <p><em>We love travel!</em></p>
+    <!-- <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Elaine</strong></p><br>
+        <a href="#demo" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo" class="collapse">
+          <!-- <p>Guitarist and Lead Vocalist</p> -->
+          <p>Loves Hiking</p>
+          <!-- <p>Member since 1988</p> -->
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Recon</strong></p><br>
+        <a href="#demo2" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo2" class="collapse">
+          <!-- <p>Drummer</p> -->
+          <p>Loves drummin'</p>
+          <!-- <p>Member since 1988</p> -->
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Zac</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Sylvia</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Kellie</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Jin</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Yong Kwan</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Ardy</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Wai Jian</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Tai</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Pat</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Bryan</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Cara</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>CR</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Joey</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <p class="text-center"><strong>Zhi Chien</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Bass player</p>
+          <p>Loves math</p>
+          <p>Member since 2005</p>
         </div>
       </div>
     </div>
   </div>
-  
-</div>
+  <div id="contact" class="container">
+    <h3 class="text-center">Contact</h3>
+    <p class="text-center"><em>We love to help!</em></p>
 
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p>made by Elaine Chong</p> 
+    <div class="row">
+      <div class="col-md-4">
+        <p>Fan? Drop a note.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span>Dundalk, IE</p>
+        <p><span class="glyphicon glyphicon-phone"></span>Phone: +353 834613320</p>
+        <p><span class="glyphicon glyphicon-envelope"></span>Email: elainepeilingchong@gmail.com</p>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+        <br>
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <button class="btn pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools"></a> -->
-</footer>
+  </div>
 
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  <footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>made by Elaine Chong</p>
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+    <!-- <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools"></a> -->
+  </footer>
 
-      // Prevent default anchor click behavior
-      event.preventDefault();
+  <script>
+    $(document).ready(function () {
+      // Initialize Tooltip
+      $('[data-toggle="tooltip"]').tooltip();
 
-      // Store hash
-      var hash = this.hash;
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
-    } // End if
-  });
-})
-</script>
+    })
+  </script>
 
 </body>
+
 </html>
